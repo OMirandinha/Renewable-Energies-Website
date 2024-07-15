@@ -1,0 +1,135 @@
+/* Geral */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Barra de Navegação */
+header {
+  margin: 0 0 40px 0;
+}
+
+.barra-nav img {
+  width: 78px;
+  margin: 10px 0px 10px 15px;
+}
+
+.barra-nav {
+  width: 100%;
+  background-color: #1bab2e;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.barra-nav ul {
+  flex-direction: row;
+  gap: 50px;
+}
+
+.barra-nav ul .atual {
+  background-color: #11cc1e;
+  cursor: pointer;
+}
+
+.barra-nav ul a,
+.atual,
+.copyright {
+  width: calc(fit-content + 20px);
+  height: 35px;
+  padding: 10px;
+  border-radius: 24px;
+
+  display: inline-flex;
+  margin-right: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.barra-nav ul a:hover {
+  background-color: #11cc1e;
+  transition: 0.3s;
+  animation: slide-top 0.3s both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Site Conteúdo */
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom_containers {
+  display: flex;
+}
+
+.container_top {
+  width: 97%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px;
+}
+
+.container_esq {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 40px;
+}
+
+.container_dir {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 40px;
+}
+
+.site__content h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #1e1e1e;
+  font-weight: bold;
+}
+
+.site__content p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0 10px 0;
+  font-size: solid 14px;
+  color: #1e1e1e;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  background-color: #1bab2e;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+}
